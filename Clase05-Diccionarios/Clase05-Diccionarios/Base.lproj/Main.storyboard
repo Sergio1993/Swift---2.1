@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Clase05_Diccionarios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo-pantalla-minimalista-azul_2060076090" translatesAutoresizingMaskIntoConstraints="NO" id="TnZ-6z-CJa">
+                                <rect key="frame" x="0.0" y="-8" width="600" height="608"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKS-0s-tpu">
+                                <rect key="frame" x="265" y="371" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymI-2f-vR1">
+                                <rect key="frame" x="269" y="57" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="30g-Ui-BJn"/>
+                                    <constraint firstAttribute="height" constant="21" id="oZl-Of-CtU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IUt-jy-cYs">
+                                <rect key="frame" x="242" y="211" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0tC-ap-0aI"/>
+                                    <constraint firstAttribute="width" constant="97" id="kTv-lC-ThK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xKS-0s-tpu" firstAttribute="top" secondItem="IUt-jy-cYs" secondAttribute="bottom" constant="130" id="UfP-ra-biH"/>
+                            <constraint firstItem="TnZ-6z-CJa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-8" id="Xxq-Bw-BZA"/>
+                            <constraint firstItem="IUt-jy-cYs" firstAttribute="top" secondItem="ymI-2f-vR1" secondAttribute="bottom" constant="133" id="ZgJ-gu-eL8"/>
+                            <constraint firstAttribute="trailing" secondItem="TnZ-6z-CJa" secondAttribute="trailing" id="c9w-3w-0KI"/>
+                            <constraint firstAttribute="centerX" secondItem="ymI-2f-vR1" secondAttribute="centerX" constant="10" id="ez0-QP-leq"/>
+                            <constraint firstItem="TnZ-6z-CJa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="f6x-pR-2UN"/>
+                            <constraint firstAttribute="centerY" secondItem="ymI-2f-vR1" secondAttribute="centerY" constant="232.5" id="kTO-nQ-EHl"/>
+                            <constraint firstItem="ymI-2f-vR1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="kUf-Mw-PiV"/>
+                            <constraint firstAttribute="centerX" secondItem="IUt-jy-cYs" secondAttribute="centerX" constant="9.5" id="nW5-RG-Dhe"/>
+                            <constraint firstAttribute="centerX" secondItem="xKS-0s-tpu" secondAttribute="centerX" constant="12" id="q1r-sj-ALJ"/>
+                            <constraint firstAttribute="centerY" secondItem="IUt-jy-cYs" secondAttribute="centerY" constant="74" id="ws2-IY-bQl"/>
+                            <constraint firstItem="TnZ-6z-CJa" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="z1m-Bd-h11"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo-pantalla-minimalista-azul_2060076090" width="541" height="338"/>
+    </resources>
+</document>
