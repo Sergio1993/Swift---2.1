@@ -15,6 +15,9 @@
 		D9816E211D11D41400E01C1A /* Clase28_AVFundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9816E201D11D41400E01C1A /* Clase28_AVFundationTests.swift */; };
 		D9816E2C1D11D41400E01C1A /* Clase28_AVFundationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9816E2B1D11D41400E01C1A /* Clase28_AVFundationUITests.swift */; };
 		D9816E3A1D11D4C500E01C1A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9816E391D11D4C500E01C1A /* AVKit.framework */; };
+		D9B40E671D174CB100BE8063 /* arkasia-back_as_one_original_mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9B40E661D174CB100BE8063 /* arkasia-back_as_one_original_mix.mp3 */; };
+		D9B40E691D174CB700BE8063 /* stefano_gambarelli_feat_pochill-land_on_mars_v2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9B40E681D174CB700BE8063 /* stefano_gambarelli_feat_pochill-land_on_mars_v2.mp3 */; };
+		D9BD1C271D16F899007FE701 /* 01 Tin Man.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9BD1C261D16F899007FE701 /* 01 Tin Man.mp3 */; };
 		D9BEEAB01D1566F10095D464 /* Living on my own.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D9BEEAAF1D1566F10095D464 /* Living on my own.mp3 */; };
 		D9BEEAB31D156B750095D464 /* Pato donald.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D9BEEAB21D156B750095D464 /* Pato donald.mp4 */; };
 /* End PBXBuildFile section */
@@ -51,6 +54,9 @@
 		D9816E2B1D11D41400E01C1A /* Clase28_AVFundationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clase28_AVFundationUITests.swift; sourceTree = "<group>"; };
 		D9816E2D1D11D41400E01C1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9816E391D11D4C500E01C1A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D9B40E661D174CB100BE8063 /* arkasia-back_as_one_original_mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "arkasia-back_as_one_original_mix.mp3"; sourceTree = "<group>"; };
+		D9B40E681D174CB700BE8063 /* stefano_gambarelli_feat_pochill-land_on_mars_v2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "stefano_gambarelli_feat_pochill-land_on_mars_v2.mp3"; sourceTree = "<group>"; };
+		D9BD1C261D16F899007FE701 /* 01 Tin Man.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Tin Man.mp3"; sourceTree = "<group>"; };
 		D9BEEAAF1D1566F10095D464 /* Living on my own.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Living on my own.mp3"; sourceTree = "<group>"; };
 		D9BEEAB21D156B750095D464 /* Pato donald.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pato donald.mp4"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +117,9 @@
 				D9816E121D11D41400E01C1A /* Assets.xcassets */,
 				D9816E141D11D41400E01C1A /* LaunchScreen.storyboard */,
 				D9BEEAB21D156B750095D464 /* Pato donald.mp4 */,
+				D9B40E661D174CB100BE8063 /* arkasia-back_as_one_original_mix.mp3 */,
+				D9B40E681D174CB700BE8063 /* stefano_gambarelli_feat_pochill-land_on_mars_v2.mp3 */,
+				D9BD1C261D16F899007FE701 /* 01 Tin Man.mp3 */,
 				D9BEEAAF1D1566F10095D464 /* Living on my own.mp3 */,
 				D9816E171D11D41400E01C1A /* Info.plist */,
 			);
@@ -242,10 +251,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B40E671D174CB100BE8063 /* arkasia-back_as_one_original_mix.mp3 in Resources */,
 				D9816E161D11D41400E01C1A /* LaunchScreen.storyboard in Resources */,
+				D9B40E691D174CB700BE8063 /* stefano_gambarelli_feat_pochill-land_on_mars_v2.mp3 in Resources */,
 				D9816E131D11D41400E01C1A /* Assets.xcassets in Resources */,
 				D9BEEAB01D1566F10095D464 /* Living on my own.mp3 in Resources */,
 				D9816E111D11D41400E01C1A /* Main.storyboard in Resources */,
+				D9BD1C271D16F899007FE701 /* 01 Tin Man.mp3 in Resources */,
 				D9BEEAB31D156B750095D464 /* Pato donald.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

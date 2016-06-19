@@ -46,6 +46,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqF-ON-DPb">
                                 <rect key="frame" x="58" y="300" width="194" height="30"/>
                                 <state key="normal" title="Play array audios"/>
+                                <connections>
+                                    <action selector="playArrayProject:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Rp-sI-gkh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

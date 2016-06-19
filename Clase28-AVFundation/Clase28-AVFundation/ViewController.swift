@@ -47,7 +47,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     Reproducir audio desde internet
     
     */
-    
+    /*
     var audioPlayer : AVAudioPlayer?
     
 
@@ -94,6 +94,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     
     func audioPlayerEndInterruption(player: AVAudioPlayer!) {
     }
+    */
     
     /*
     ==================TAREA 3 ================
@@ -146,6 +147,93 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     }
     
     */
+    
+    
+    /*
+    Crea una aplicación que reproduzca un array de archivos de audio, alojados en el proyecto.
+    */
+
+    
+    var audioPlayer : AVAudioPlayer?
+    
+    var canciones: [String] = ["arkasia-back_as_one_original_mix", "stefano_gambarelli_feat_pochill-land_on_mars_v2","01 Tin Man"]
+    var counter = 0
+    
+    @IBAction func playArrayProject(sender: AnyObject) {
+        
+        music()
+        
+        
+    }
+    
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        //music()
+        /*let path = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("\(canciones[counter])", ofType: "mp3")!)
+        
+        var error:NSError?
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOfURL: path)
+        }catch let error1 as NSError{
+            error = error1
+            audioPlayer = nil
+        }
+        
+        if let err = error {
+            print("audioPlayer error \(err.localizedDescription)")
+        } else {
+            audioPlayer?.delegate = self
+            audioPlayer?.prepareToPlay()
+        }*/
+        
+    }
+    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully
+        flag: Bool) {
+            
+        print("Called")
+        if flag {
+            counter++
+        }
+            
+        if ((counter + 1) == canciones.count) {
+            counter = 0
+        }
+            
+        music()
+    }
+    
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer,
+        error: NSError?) {
+    }
+    
+    func audioPlayerBeginInterruption(player: AVAudioPlayer) {
+    }
+    
+    func audioPlayerEndInterruption(player: AVAudioPlayer) {
+    }
+    
+    func music(){
+        
+        let path = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("\(canciones[counter])", ofType: "mp3")!)
+        var error : NSError?
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOfURL: path)
+        }catch let error1 as NSError{
+            error = error1
+            audioPlayer = nil
+        }
+
+        audioPlayer!.delegate = self
+        if error == nil {
+            audioPlayer!.delegate = self
+            audioPlayer!.prepareToPlay()
+            audioPlayer!.play()
+        }
+
+    }
 
 }
+
 
