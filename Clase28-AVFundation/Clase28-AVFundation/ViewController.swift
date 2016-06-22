@@ -30,6 +30,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     ==================TAREA 1 ================
     Reproducir video desde el proyecto
     */
+    
     var moviePlayer : AVPlayerViewController!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -40,14 +41,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
         }
     }
     
-    
-    
     /*
     ==================TAREA 2 ================
     Reproducir audio desde internet
     
-    */
-    /*
+
     var audioPlayer : AVAudioPlayer?
     
 
@@ -61,11 +59,11 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = NSURL(string: "https://www.dropbox.com/s/sm4ofy9c41ghctc/Living%20on%20my%20own.mp3?dl=0")
+        let url = NSURL(string: "https://www.dropbox.com/s/sm4ofy9c41ghctc/Living%20on%20my%20own.mp3?dl=0")!
         
         var error:NSError?
         do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: url!)
+            audioPlayer = try AVAudioPlayer(contentsOfURL: url)
         }catch let error1 as NSError{
             error = error1
             audioPlayer = nil
@@ -81,20 +79,21 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
         
     }
     
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully
         flag: Bool) {
     }
     
-    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!,
-        error: NSError!) {
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer,
+        error: NSError?) {
     }
     
-    func audioPlayerBeginInterruption(player: AVAudioPlayer!) {
+    func audioPlayerBeginInterruption(player: AVAudioPlayer) {
     }
     
-    func audioPlayerEndInterruption(player: AVAudioPlayer!) {
+    func audioPlayerEndInterruption(player: AVAudioPlayer) {
     }
     */
+
     
     /*
     ==================TAREA 3 ================
@@ -132,22 +131,21 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
        
     }
     
-    func audioPlayerDidFinishPlaying(player: AVAudioPlayer!, successfully
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully
         flag: Bool) {
     }
     
-    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer!,
-        error: NSError!) {
+    func audioPlayerDecodeErrorDidOccur(player: AVAudioPlayer,
+        error: NSError?) {
     }
     
-    func audioPlayerBeginInterruption(player: AVAudioPlayer!) {
+    func audioPlayerBeginInterruption(player: AVAudioPlayer) {
     }
     
-    func audioPlayerEndInterruption(player: AVAudioPlayer!) {
+    func audioPlayerEndInterruption(player: AVAudioPlayer) {
     }
     
     */
-    
     
     /*
     Crea una aplicación que reproduzca un array de archivos de audio, alojados en el proyecto.
@@ -156,7 +154,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     
     var audioPlayer : AVAudioPlayer?
     
-    var canciones: [String] = ["arkasia-back_as_one_original_mix", "stefano_gambarelli_feat_pochill-land_on_mars_v2","01 Tin Man"]
+    var canciones: [String] = ["arkasia-back_as_one_original_mix", "stefano_gambarelli_feat_pochill-land_on_mars_v2"]
     var counter = 0
     
     @IBAction func playArrayProject(sender: AnyObject) {
@@ -166,33 +164,16 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
         
     }
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        //music()
-        /*let path = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("\(canciones[counter])", ofType: "mp3")!)
-        
-        var error:NSError?
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: path)
-        }catch let error1 as NSError{
-            error = error1
-            audioPlayer = nil
-        }
-        
-        if let err = error {
-            print("audioPlayer error \(err.localizedDescription)")
-        } else {
-            audioPlayer?.delegate = self
-            audioPlayer?.prepareToPlay()
-        }*/
-        
-    }
     
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully
         flag: Bool) {
             
         print("Called")
+        print("counter\(counter)Canciones\(canciones.count)")
+        if (counter == canciones.count-1){
+                player.stop()
+        }
+            
         if flag {
             counter++
         }
@@ -200,6 +181,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
         if ((counter + 1) == canciones.count) {
             counter = 0
         }
+            
+        
             
         music()
     }
