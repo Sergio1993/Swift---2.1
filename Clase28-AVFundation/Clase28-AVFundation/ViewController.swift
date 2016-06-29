@@ -16,66 +16,51 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     /*
     
     ==================TAREA 0 ================
-    Reproducir un video desde internet
+    Reproducir un video desde internet FUNCIONA ---> OK
+    */
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destination = segue.destinationViewController as? AVPlayerViewController{
-            if let url = NSURL(string: "https://www.dropbox.com/s/d2kdqp7ifi124o3/15474.mp4?dl=0"){
+            if let url = NSURL(string: "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"){
                 destination.player = AVPlayer(URL: url)
+                destination.player?.play()
             }
         }
     }
-    */
+
     /*
     ==================TAREA 1 ================
-    Reproducir video desde el proyecto
+    Reproducir video desde el proyecto FUNCIONA ---> OK
     */
-    
+    /*
     var moviePlayer : AVPlayerViewController!
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let destination = segue.destinationViewController as? AVPlayerViewController{
             let path = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("Pato donald", ofType: "mp4")!)
                 destination.player = AVPlayer(URL: path)
-            
+                destination.player?.play()
+                
         }
     }
-    
+    */
     /*
     ==================TAREA 2 ================
-    Reproducir audio desde internet
+    Reproducir audio desde internet FUNCIONA ---> NO
+    */
     
-
     var audioPlayer : AVAudioPlayer?
     
 
     @IBAction func playAudioInternet(sender: AnyObject) {
         
-        if let player = audioPlayer {
-            player.play()
-        }
-        
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let url = NSURL(string: "https://www.dropbox.com/s/sm4ofy9c41ghctc/Living%20on%20my%20own.mp3?dl=0")!
-        
-        var error:NSError?
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: url)
-        }catch let error1 as NSError{
-            error = error1
-            audioPlayer = nil
-        }
-        
-        
-        if let err = error {
-            print("audioPlayer error \(err.localizedDescription)")
-        } else {
-            audioPlayer?.delegate = self
-            audioPlayer?.prepareToPlay()
-        }
+        let url = "https://www.dropbox.com/s/sm4ofy9c41ghctc/Living%20on%20my%20own.mp3"
+        var player:AVAudioPlayer!
+        let steamingURL:NSURL = NSURL(string:url)!
+        do{
+        player = try AVAudioPlayer(contentsOfURL: steamingURL)
+        }catch{}
+        player.play()
         
     }
     
@@ -92,13 +77,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     
     func audioPlayerEndInterruption(player: AVAudioPlayer) {
     }
-    */
 
-    
     /*
     ==================TAREA 3 ================
-    Reproducir audio desde el proyecto
-
+    Reproducir audio desde el proyecto FUNCIONA ---> OK
+    */
+    /*
     var audioPlayer : AVAudioPlayer?
     
     @IBAction func playAudioProject(sender: AnyObject) {
@@ -148,10 +132,10 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     */
     
     /*
-    Crea una aplicación que reproduzca un array de archivos de audio, alojados en el proyecto.
+    Crea una aplicación que reproduzca un array de archivos de audio, alojados en el proyecto. FUNCIONA ---> OK
     */
 
-    
+    /*
     var audioPlayer : AVAudioPlayer?
     
     var canciones: [String] = ["arkasia-back_as_one_original_mix", "stefano_gambarelli_feat_pochill-land_on_mars_v2"]
@@ -215,7 +199,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
             audioPlayer!.play()
         }
 
-    }
+    }*/
 
 }
 

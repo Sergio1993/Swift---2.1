@@ -21,7 +21,6 @@
                                 <rect key="frame" x="58" y="38" width="194" height="30"/>
                                 <state key="normal" title="Play video internet"/>
                                 <connections>
-                                    <action selector="playAudioInternet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U01-1a-2UF"/>
                                     <segue destination="38z-hj-Vii" kind="show" id="Bep-lC-Q1K"/>
                                 </connections>
                             </button>
@@ -35,6 +34,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NdU-RJ-TzT">
                                 <rect key="frame" x="58" y="168" width="194" height="30"/>
                                 <state key="normal" title="Play audio internet"/>
+                                <connections>
+                                    <action selector="playAudioInternet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Wv-uO-Y0a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xR-Nk-b8G">
                                 <rect key="frame" x="58" y="221" width="194" height="30"/>
