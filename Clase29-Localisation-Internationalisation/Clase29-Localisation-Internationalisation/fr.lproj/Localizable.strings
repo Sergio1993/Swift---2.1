@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Clase29-Localisation-Internationalisation
+
+  Created by Sergio Pita on 30/8/16.
+  Copyright © 2016 Sergio Pita. All rights reserved.
+*/
+
+//Frances
+
+"Hello world!!" = "Bonjour le monde!!";
+"alerts" = "Voulez-vous continuer à apprendre comment utiliser iOS alertes?";

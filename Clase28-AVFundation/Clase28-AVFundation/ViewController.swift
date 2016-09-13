@@ -54,13 +54,21 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
 
     @IBAction func playAudioInternet(sender: AnyObject) {
         
-        let url = "https://www.dropbox.com/s/sm4ofy9c41ghctc/Living%20on%20my%20own.mp3"
-        var player:AVAudioPlayer!
-        let steamingURL:NSURL = NSURL(string:url)!
-        do{
-        player = try AVAudioPlayer(contentsOfURL: steamingURL)
-        }catch{}
-        player.play()
+        //let url = "https://www.dropbox.com/s/sm4ofy9c41ghctc/Living%20on%20my%20own.mp3"
+        let path = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("https://www.dropbox.com/s/sm4ofy9c41ghctc/Living%20on%20my%20own", ofType: "mp3")!)
+        //Declaration
+        var hitSoundPlayer: AVAudioPlayer?
+        
+        //Added into the didMoveToView(view: SKView) Function
+        do {
+            hitSoundPlayer = try AVAudioPlayer(contentsOfURL: path)
+            hitSoundPlayer!.prepareToPlay()
+        } catch _ {
+            hitSoundPlayer = nil
+        }
+        
+        //When you want to play it
+        hitSoundPlayer!.play()
         
     }
     
@@ -76,6 +84,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     }
     
     func audioPlayerEndInterruption(player: AVAudioPlayer) {
+    }
+    
+    func wav(filename:NSString) -> AVAudioPlayer {
+        let url = NSBundle.mainBundle().URLForResource(filename as String, withExtension: "mp3")
+        let player = try!  AVAudioPlayer(contentsOfURL: url!)
+        player.prepareToPlay()
+        player.volume = 0.2
+        return player
     }
 
     /*
@@ -202,5 +218,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate
     }*/
 
 }
+
+
 
 
