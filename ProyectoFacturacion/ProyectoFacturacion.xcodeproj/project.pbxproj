@@ -229,15 +229,18 @@
 					D92F5B021D8F0F8C0070F86A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 					};
 					D92F5B181D8F0F8C0070F86A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D92F5B021D8F0F8C0070F86A;
 					};
 					D92F5B231D8F0F8C0070F86A = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D92F5B021D8F0F8C0070F86A;
 					};
 				};
@@ -450,6 +453,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.ProyectoFacturacion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -461,6 +465,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.ProyectoFacturacion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -472,6 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.ProyectoFacturacionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProyectoFacturacion.app/ProyectoFacturacion";
 			};
 			name = Debug;
@@ -484,6 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.ProyectoFacturacionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProyectoFacturacion.app/ProyectoFacturacion";
 			};
 			name = Release;
@@ -495,6 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.ProyectoFacturacionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ProyectoFacturacion;
 				USES_XCTRUNNER = YES;
 			};
@@ -507,6 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sp.ProyectoFacturacionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ProyectoFacturacion;
 				USES_XCTRUNNER = YES;
 			};

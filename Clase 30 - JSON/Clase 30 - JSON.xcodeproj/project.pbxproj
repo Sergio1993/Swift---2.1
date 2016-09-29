@@ -194,15 +194,18 @@
 					D9A51DF61D9BF6790068EF83 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 					};
 					D9A51E0A1D9BF6790068EF83 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D9A51DF61D9BF6790068EF83;
 					};
 					D9A51E151D9BF6790068EF83 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D9A51DF61D9BF6790068EF83;
 					};
 				};
@@ -406,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase-30---JSON";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -417,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase-30---JSON";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -428,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase-30---JSONTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase 30 - JSON.app/Clase 30 - JSON";
 			};
 			name = Debug;
@@ -440,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase-30---JSONTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase 30 - JSON.app/Clase 30 - JSON";
 			};
 			name = Release;
@@ -451,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase-30---JSONUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Clase 30 - JSON";
 				USES_XCTRUNNER = YES;
 			};
@@ -463,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase-30---JSONUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Clase 30 - JSON";
 				USES_XCTRUNNER = YES;
 			};
@@ -487,6 +496,7 @@
 				D9A51E211D9BF6790068EF83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9A51E221D9BF6790068EF83 /* Build configuration list for PBXNativeTarget "Clase 30 - JSONTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +505,7 @@
 				D9A51E241D9BF6790068EF83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9A51E251D9BF6790068EF83 /* Build configuration list for PBXNativeTarget "Clase 30 - JSONUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +514,7 @@
 				D9A51E271D9BF6790068EF83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
