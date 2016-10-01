@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		D92F5B071D8F0F8C0070F86A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F5B061D8F0F8C0070F86A /* AppDelegate.swift */; };
 		D92F5B091D8F0F8C0070F86A /* Incio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F5B081D8F0F8C0070F86A /* Incio.swift */; };
-		D92F5B0B1D8F0F8C0070F86A /* facturas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F5B0A1D8F0F8C0070F86A /* facturas.swift */; };
+		D92F5B0B1D8F0F8C0070F86A /* Facturas.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F5B0A1D8F0F8C0070F86A /* Facturas.swift */; };
 		D92F5B101D8F0F8C0070F86A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92F5B0F1D8F0F8C0070F86A /* Assets.xcassets */; };
 		D92F5B131D8F0F8C0070F86A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92F5B111D8F0F8C0070F86A /* LaunchScreen.storyboard */; };
 		D92F5B1E1D8F0F8C0070F86A /* ProyectoFacturacionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F5B1D1D8F0F8C0070F86A /* ProyectoFacturacionTests.swift */; };
 		D92F5B291D8F0F8C0070F86A /* ProyectoFacturacionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F5B281D8F0F8C0070F86A /* ProyectoFacturacionUITests.swift */; };
 		D92F5B381D8F16340070F86A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92F5B361D8F16340070F86A /* Main.storyboard */; };
+		D9318C0C1D9FB643005C0597 /* AddContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318C0B1D9FB643005C0597 /* AddContacts.swift */; };
 		D99EEBE51D96898D001E8AC9 /* linedpaper32.png in Resources */ = {isa = PBXBuildFile; fileRef = D99EEBE41D96898D001E8AC9 /* linedpaper32.png */; };
 		D99EEBE71D9689AC001E8AC9 /* linedpaperplus32.png in Resources */ = {isa = PBXBuildFile; fileRef = D99EEBE61D9689AC001E8AC9 /* linedpaperplus32.png */; };
 		D99EEBE91D9689BC001E8AC9 /* user32.png in Resources */ = {isa = PBXBuildFile; fileRef = D99EEBE81D9689BC001E8AC9 /* user32.png */; };
@@ -46,7 +47,7 @@
 		D92F5B031D8F0F8C0070F86A /* ProyectoFacturacion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFacturacion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92F5B061D8F0F8C0070F86A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D92F5B081D8F0F8C0070F86A /* Incio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incio.swift; sourceTree = "<group>"; };
-		D92F5B0A1D8F0F8C0070F86A /* facturas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facturas.swift; sourceTree = "<group>"; };
+		D92F5B0A1D8F0F8C0070F86A /* Facturas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facturas.swift; sourceTree = "<group>"; };
 		D92F5B0F1D8F0F8C0070F86A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D92F5B121D8F0F8C0070F86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D92F5B141D8F0F8C0070F86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		D92F5B281D8F0F8C0070F86A /* ProyectoFacturacionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProyectoFacturacionUITests.swift; sourceTree = "<group>"; };
 		D92F5B2A1D8F0F8C0070F86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D92F5B371D8F16340070F86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9318C0B1D9FB643005C0597 /* AddContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContacts.swift; sourceTree = "<group>"; };
 		D99EEBE41D96898D001E8AC9 /* linedpaper32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linedpaper32.png; sourceTree = "<group>"; };
 		D99EEBE61D9689AC001E8AC9 /* linedpaperplus32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linedpaperplus32.png; sourceTree = "<group>"; };
 		D99EEBE81D9689BC001E8AC9 /* user32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user32.png; sourceTree = "<group>"; };
@@ -118,7 +120,8 @@
 			children = (
 				D92F5B061D8F0F8C0070F86A /* AppDelegate.swift */,
 				D92F5B081D8F0F8C0070F86A /* Incio.swift */,
-				D92F5B0A1D8F0F8C0070F86A /* facturas.swift */,
+				D92F5B0A1D8F0F8C0070F86A /* Facturas.swift */,
+				D9318C0B1D9FB643005C0597 /* AddContacts.swift */,
 				D99EEBEE1D968E35001E8AC9 /* Empresas.swift */,
 				D99EEBF01D968E42001E8AC9 /* Clientes.swift */,
 				D99EEBF21D968E4D001E8AC9 /* Ajustes.swift */,
@@ -223,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Sergio Pita";
 				TargetAttributes = {
 					D92F5B021D8F0F8C0070F86A = {
@@ -302,12 +305,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D92F5B0B1D8F0F8C0070F86A /* facturas.swift in Sources */,
+				D92F5B0B1D8F0F8C0070F86A /* Facturas.swift in Sources */,
 				D99EEBEF1D968E35001E8AC9 /* Empresas.swift in Sources */,
 				D92F5B071D8F0F8C0070F86A /* AppDelegate.swift in Sources */,
 				D99EEBF31D968E4D001E8AC9 /* Ajustes.swift in Sources */,
 				D92F5B091D8F0F8C0070F86A /* Incio.swift in Sources */,
 				D99EEBF11D968E42001E8AC9 /* Clientes.swift in Sources */,
+				D9318C0C1D9FB643005C0597 /* AddContacts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,8 +379,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -398,7 +404,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -420,8 +426,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -437,9 +445,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};

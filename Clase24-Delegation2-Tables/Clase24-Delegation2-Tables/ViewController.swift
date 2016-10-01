@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return paisesAmerica.count
     }
     
@@ -29,9 +29,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         return value1 < value2;
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let celda = tableView.dequeueReusableCellWithIdentifier("CeldaReusable", forIndexPath: indexPath)
+        let celda = tableView.dequeueReusableCell(withIdentifier: "CeldaReusable", for: indexPath)
         //paisesAmerica.sortInPlace(before)
         //imagenesPaises.sortInPlace(before)
         celda.textLabel?.text = paisesAmerica[indexPath.row]

@@ -194,15 +194,18 @@
 					D96068251CC27EA5001F4CED = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 					};
 					D96068391CC27EA5001F4CED = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D96068251CC27EA5001F4CED;
 					};
 					D96068441CC27EA5001F4CED = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D96068251CC27EA5001F4CED;
 					};
 				};
@@ -406,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase24-Delegation2-Tables";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -417,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase24-Delegation2-Tables";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -428,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase24-Delegation2-TablesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase24-Delegation2-Tables.app/Clase24-Delegation2-Tables";
 			};
 			name = Debug;
@@ -440,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase24-Delegation2-TablesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase24-Delegation2-Tables.app/Clase24-Delegation2-Tables";
 			};
 			name = Release;
@@ -451,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase24-Delegation2-TablesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Clase24-Delegation2-Tables";
 				USES_XCTRUNNER = YES;
 			};
@@ -463,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase24-Delegation2-TablesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Clase24-Delegation2-Tables";
 				USES_XCTRUNNER = YES;
 			};
@@ -487,6 +496,7 @@
 				D96068501CC27EA5001F4CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D96068511CC27EA5001F4CED /* Build configuration list for PBXNativeTarget "Clase24-Delegation2-TablesTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +505,7 @@
 				D96068531CC27EA5001F4CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D96068541CC27EA5001F4CED /* Build configuration list for PBXNativeTarget "Clase24-Delegation2-TablesUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +514,7 @@
 				D96068561CC27EA5001F4CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

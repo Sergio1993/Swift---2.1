@@ -194,15 +194,18 @@
 					D9BAB7F81C2587D0006EF431 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 					};
 					D9BAB80C1C2587D0006EF431 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D9BAB7F81C2587D0006EF431;
 					};
 					D9BAB8171C2587D0006EF431 = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D9BAB7F81C2587D0006EF431;
 					};
 				};
@@ -406,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase11-UINavigationController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -417,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase11-UINavigationController";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -428,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase11-UINavigationControllerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase11-UINavigationController.app/Clase11-UINavigationController";
 			};
 			name = Debug;
@@ -440,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase11-UINavigationControllerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase11-UINavigationController.app/Clase11-UINavigationController";
 			};
 			name = Release;
@@ -451,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase11-UINavigationControllerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Clase11-UINavigationController";
 				USES_XCTRUNNER = YES;
 			};
@@ -463,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase11-UINavigationControllerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Clase11-UINavigationController";
 				USES_XCTRUNNER = YES;
 			};
@@ -487,6 +496,7 @@
 				D9BAB8231C2587D0006EF431 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9BAB8241C2587D0006EF431 /* Build configuration list for PBXNativeTarget "Clase11-UINavigationControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +505,7 @@
 				D9BAB8261C2587D0006EF431 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9BAB8271C2587D0006EF431 /* Build configuration list for PBXNativeTarget "Clase11-UINavigationControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +514,7 @@
 				D9BAB8291C2587D0006EF431 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
