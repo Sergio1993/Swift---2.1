@@ -161,9 +161,11 @@
 				TargetAttributes = {
 					D978B8B41BC9484E00D71CBC = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 					};
 					D978B8C91BC9484E00D71CBC = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D978B8B41BC9484E00D71CBC;
 					};
 				};
@@ -345,6 +347,7 @@
 				INFOPLIST_FILE = "Clase04-ArraysyAutoLayout/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -355,6 +358,7 @@
 				INFOPLIST_FILE = "Clase04-ArraysyAutoLayout/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -373,6 +377,7 @@
 				INFOPLIST_FILE = "Clase04-ArraysyAutoLayoutTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase04-ArraysyAutoLayout.app/Clase04-ArraysyAutoLayout";
 			};
 			name = Debug;
@@ -388,6 +393,7 @@
 				INFOPLIST_FILE = "Clase04-ArraysyAutoLayoutTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase04-ArraysyAutoLayout.app/Clase04-ArraysyAutoLayout";
 			};
 			name = Release;
@@ -411,6 +417,7 @@
 				D978B8D61BC9484E00D71CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D978B8D71BC9484E00D71CBC /* Build configuration list for PBXNativeTarget "Clase04-ArraysyAutoLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				D978B8D91BC9484E00D71CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -88,12 +88,13 @@ var otroArray = [false, true, false]
 
 miArrayDos += otroArray
 
+print(miArrayDos)
 //Tarea 8
 
 //Elimina su último elemento.
 var ultimo = miArrayDos.count
 
-miArrayDos.removeAtIndex(ultimo-1)
+miArrayDos.remove(at: ultimo-1)
 
 
 

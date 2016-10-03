@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "80CB0AAC6182760B2186E924A7996DD181412925",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EA28E87F67624260D173F1EC6A3541878AC7A278" : 0,
+    "80CB0AAC6182760B2186E924A7996DD181412925" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1195EC30-BAEA-4F97-8C45-EBBF92CCF85F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EA28E87F67624260D173F1EC6A3541878AC7A278" : "Swift-iOS-",
+    "80CB0AAC6182760B2186E924A7996DD181412925" : "Swift%20-%202.1\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Clase04-ArraysAutoLayout",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Clase04-ArraysAutoLayout.playground",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sergio1993\/Swift---2.1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "80CB0AAC6182760B2186E924A7996DD181412925"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sergio1993\/Swift-iOS-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA28E87F67624260D173F1EC6A3541878AC7A278"
+    }
+  ]
+}

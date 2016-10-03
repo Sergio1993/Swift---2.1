@@ -12,30 +12,26 @@ class SecondViewController: UIViewController, UITableViewDataSource{
     
     @IBOutlet weak var tablewView: UITableView!
     
-    var nombre = String()
-    var apellidos = String()
     
     var nombresArray:[String] = [String]()
     var apeArray:[String] = [String]()
     
-    var userDefaults = UserDefaults.standard
+    var nombre: String = ""
+    var apellido: String = ""
+    
+    //var userDefaults = UserDefaults.standard
+    
+    @IBAction func done(_ segue:UIStoryboardSegue) {
+        nombresArray.append(nombre)
+        apeArray.append(apellido)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        //self.tableview.delegate = self
-        tablewView.dataSource = self
-        
-        nombre = userDefaults.string(forKey: "userName") ?? "-"
-        apellidos = userDefaults.string(forKey: "apellidos") ?? "-"
-        
-        nombresArray.append(nombre)
-        apeArray.append(apellidos)
-        
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        tablewView.reloadData()
+        //tablewView.delegate = self
+        //tablewView.dataSource = self
     }
 
     
@@ -48,11 +44,12 @@ class SecondViewController: UIViewController, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let celda = tableView.dequeueReusableCell(withIdentifier: "CeldaReusable", for: indexPath)
-
-        celda.textLabel?.text = nombresArray[indexPath.row]
-        celda.detailTextLabel?.text = apeArray[indexPath.row]
+        
+        celda.textLabel!.text = nombresArray[(indexPath as NSIndexPath).row]
+        celda.detailTextLabel!.text = apeArray[(indexPath as NSIndexPath).row]
+        //celda.textLabel?.text = nombresArray[indexPath.row]
+        //celda.detailTextLabel?.text = apeArray[indexPath.row]
         
         return celda
     }
