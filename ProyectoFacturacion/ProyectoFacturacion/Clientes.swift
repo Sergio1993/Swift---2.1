@@ -8,17 +8,53 @@
 
 import UIKit
 
-class Clientes: UIViewController {
+class Clientes: UIViewController, UITableViewDataSource {
+    
+    @IBOutlet weak var tableClientes: UITableView!
+    
+    
+    var nombresArray:[String] = [String]()
+    var apeArray:[String] = [String]()
+    
+    var nombre: String = ""
+    var apellido: String = ""
+    
+    
+    @IBAction func done(_ segue:UIStoryboardSegue) {
+        nombresArray.append(nombre)
+        apeArray.append(apellido)
+    }
     
     override func viewDidLoad() {
+        tableClientes.dataSource = self
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        tableClientes.dataSource = self
+        tableClientes.reloadData()
     }
+    
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return nombresArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let celda = tableView.dequeueReusableCell(withIdentifier: "CeldaReusable", for: indexPath)
+        
+        celda.textLabel!.text = nombresArray[(indexPath as NSIndexPath).row]
+        celda.detailTextLabel!.text = apeArray[(indexPath as NSIndexPath).row]
+        
+        return celda
+    }
+
     
     
 }

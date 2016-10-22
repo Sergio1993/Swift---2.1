@@ -12,12 +12,12 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var labelFirstView: UILabel!
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         // Do any additional setup after loading the view, typically from a nib.
         // Bloque para extraer hora, minutos y segundos de un NSDate a traves de un NSCalendar
-        let fecha = NSDate()
-        let calendario = NSCalendar.currentCalendar()
-        let componentes = calendario.components([.Hour, .Minute, .Second], fromDate: fecha)
+        let fecha = Date()
+        let calendario = Calendar.current
+        let componentes = (calendario as NSCalendar).components([.hour, .minute, .second], from: fecha)
         let hora = componentes.hour
         let minutos = componentes.minute
         let segundos = componentes.second

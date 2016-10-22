@@ -21,24 +21,24 @@ class ViewController: UIViewController, UITableViewDataSource {
         
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return facturaArray.count
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let celda = tableView.dequeueReusableCellWithIdentifier("CeldaReusable", forIndexPath: indexPath)
+        let celda = tableView.dequeueReusableCell(withIdentifier: "CeldaReusable", for: indexPath)
         
-        if let data = NSUserDefaults.standardUserDefaults().objectForKey("factura") as? NSData {
-            if let factura = NSKeyedUnarchiver.unarchiveObjectWithData(data) as? [Factura]
+        if let data = UserDefaults.standard.object(forKey: "factura") as? Data {
+            if let factura = NSKeyedUnarchiver.unarchiveObject(with: data) as? [Factura]
             {
-                let sortedFacturas = factura.sort ({ $0.numeroFactura < $1.numeroFactura })
-                celda.textLabel?.text = "\(sortedFacturas[indexPath.row].nombreFactura)"
-                celda.detailTextLabel!.text = "\(sortedFacturas[indexPath.row].descripcion)"
+                let sortedFacturas = factura.sorted (by: { $0.numeroFactura < $1.numeroFactura })
+                celda.textLabel?.text = "\(sortedFacturas[(indexPath as NSIndexPath).row].nombreFactura)"
+                celda.detailTextLabel!.text = "\(sortedFacturas[(indexPath as NSIndexPath).row].descripcion)"
             }
         }
         
@@ -56,8 +56,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         facturaArray.append(item2)
         facturaArray.append(item3)
 
-        let placesData = NSKeyedArchiver.archivedDataWithRootObject(facturaArray)
-        NSUserDefaults.standardUserDefaults().setObject(placesData, forKey: "factura")
+        let placesData = NSKeyedArchiver.archivedData(withRootObject: facturaArray)
+        UserDefaults.standard.set(placesData, forKey: "factura")
         
     }
 

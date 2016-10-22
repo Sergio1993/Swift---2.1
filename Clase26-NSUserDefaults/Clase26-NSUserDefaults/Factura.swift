@@ -23,17 +23,17 @@ class Factura : NSObject {
         self.importe = im
     }
     
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(numeroFactura, forKey: "numeroFactura")
-        aCoder.encodeObject(nombreFactura, forKey: "nombreFactura")
-        aCoder.encodeObject(descripcion, forKey: "descripcion")
-        aCoder.encodeObject(importe, forKey: "importe")
+    func encodeWithCoder(_ aCoder: NSCoder) {
+        aCoder.encode(numeroFactura, forKey: "numeroFactura")
+        aCoder.encode(nombreFactura, forKey: "nombreFactura")
+        aCoder.encode(descripcion, forKey: "descripcion")
+        aCoder.encode(importe, forKey: "importe")
     }
     
     required init(coder aDecoder:NSCoder) {
-        numeroFactura = aDecoder.decodeObjectForKey("numeroFactura") as! Int
-        nombreFactura = aDecoder.decodeObjectForKey("nombreFactura") as! String
-        descripcion = aDecoder.decodeObjectForKey("descripcion") as! String
-        importe = aDecoder.decodeObjectForKey("importe") as! Float
+        numeroFactura = aDecoder.decodeObject(forKey: "numeroFactura") as! Int
+        nombreFactura = aDecoder.decodeObject(forKey: "nombreFactura") as! String
+        descripcion = aDecoder.decodeObject(forKey: "descripcion") as! String
+        importe = aDecoder.decodeObject(forKey: "importe") as! Float
     }
 }

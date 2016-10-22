@@ -194,15 +194,18 @@
 					D9C0CC0D1CF1E9D0004A25CB = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 					};
 					D9C0CC211CF1E9D0004A25CB = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D9C0CC0D1CF1E9D0004A25CB;
 					};
 					D9C0CC2C1CF1E9D0004A25CB = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8T32U9XHC4;
+						LastSwiftMigration = 0800;
 						TestTargetID = D9C0CC0D1CF1E9D0004A25CB;
 					};
 				};
@@ -406,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase27-NSDate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -417,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase27-NSDate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -428,6 +433,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase27-NSDateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase27-NSDate.app/Clase27-NSDate";
 			};
 			name = Debug;
@@ -440,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase27-NSDateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clase27-NSDate.app/Clase27-NSDate";
 			};
 			name = Release;
@@ -451,6 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase27-NSDateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Clase27-NSDate";
 				USES_XCTRUNNER = YES;
 			};
@@ -463,6 +471,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sp.Clase27-NSDateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Clase27-NSDate";
 				USES_XCTRUNNER = YES;
 			};
@@ -487,6 +496,7 @@
 				D9C0CC381CF1E9D0004A25CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9C0CC391CF1E9D0004A25CB /* Build configuration list for PBXNativeTarget "Clase27-NSDateTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +505,7 @@
 				D9C0CC3B1CF1E9D0004A25CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9C0CC3C1CF1E9D0004A25CB /* Build configuration list for PBXNativeTarget "Clase27-NSDateUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +514,7 @@
 				D9C0CC3E1CF1E9D0004A25CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

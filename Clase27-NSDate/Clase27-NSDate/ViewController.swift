@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     //let date = NSDate()
     
     
-    func dataPickerChange(dataPicker: UIDatePicker) {
+    func dataPickerChange(_ dataPicker: UIDatePicker) {
         
         /*
         Tarea 0
@@ -44,16 +44,16 @@ class ViewController: UIViewController {
         */
         
         /*Tarea 2*/
-        let fromDateFormatter = NSDateFormatter()
+        let fromDateFormatter = DateFormatter()
         fromDateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-        let startTime = fromDateFormatter.stringFromDate(dataPicker.date)
+        let startTime = fromDateFormatter.string(from: dataPicker.date)
         self.fecha.text = startTime
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataPicker.addTarget(self, action: Selector("dataPickerChange:"), forControlEvents: UIControlEvents.ValueChanged)
+        dataPicker.addTarget(self, action: #selector(ViewController.dataPickerChange(_:)), for: UIControlEvents.valueChanged)
        
     }
 

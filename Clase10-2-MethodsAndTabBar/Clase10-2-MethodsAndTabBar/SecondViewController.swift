@@ -13,10 +13,10 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var labelSecondView: UILabel!
     var contador = 0
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         // Do any additional setup after loading the view, typically from a nib.
         // Bloque para extraer hora, minutos y segundos de un NSDate a traves de un NSCalendar
-        contador++
+        contador += 1
         labelSecondView.text = "contador \(contador)";
 
     }
