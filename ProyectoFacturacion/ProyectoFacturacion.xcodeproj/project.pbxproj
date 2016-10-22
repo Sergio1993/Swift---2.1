@@ -16,6 +16,7 @@
 		D92F5B291D8F0F8C0070F86A /* ProyectoFacturacionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F5B281D8F0F8C0070F86A /* ProyectoFacturacionUITests.swift */; };
 		D92F5B381D8F16340070F86A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92F5B361D8F16340070F86A /* Main.storyboard */; };
 		D9318C0C1D9FB643005C0597 /* AddContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9318C0B1D9FB643005C0597 /* AddContacts.swift */; };
+		D932DCCB1DBB4E2D00037154 /* GuardarClientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D932DCCA1DBB4E2D00037154 /* GuardarClientes.swift */; };
 		D99EEBE51D96898D001E8AC9 /* linedpaper32.png in Resources */ = {isa = PBXBuildFile; fileRef = D99EEBE41D96898D001E8AC9 /* linedpaper32.png */; };
 		D99EEBE71D9689AC001E8AC9 /* linedpaperplus32.png in Resources */ = {isa = PBXBuildFile; fileRef = D99EEBE61D9689AC001E8AC9 /* linedpaperplus32.png */; };
 		D99EEBE91D9689BC001E8AC9 /* user32.png in Resources */ = {isa = PBXBuildFile; fileRef = D99EEBE81D9689BC001E8AC9 /* user32.png */; };
@@ -59,6 +60,7 @@
 		D92F5B2A1D8F0F8C0070F86A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D92F5B371D8F16340070F86A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9318C0B1D9FB643005C0597 /* AddContacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContacts.swift; sourceTree = "<group>"; };
+		D932DCCA1DBB4E2D00037154 /* GuardarClientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardarClientes.swift; sourceTree = "<group>"; };
 		D99EEBE41D96898D001E8AC9 /* linedpaper32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linedpaper32.png; sourceTree = "<group>"; };
 		D99EEBE61D9689AC001E8AC9 /* linedpaperplus32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = linedpaperplus32.png; sourceTree = "<group>"; };
 		D99EEBE81D9689BC001E8AC9 /* user32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user32.png; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				D99EEBEE1D968E35001E8AC9 /* Empresas.swift */,
 				D99EEBF01D968E42001E8AC9 /* Clientes.swift */,
 				D9318C0B1D9FB643005C0597 /* AddContacts.swift */,
+				D932DCCA1DBB4E2D00037154 /* GuardarClientes.swift */,
 				D99EEBF21D968E4D001E8AC9 /* Ajustes.swift */,
 				D92F5B361D8F16340070F86A /* Main.storyboard */,
 				D92F5B0F1D8F0F8C0070F86A /* Assets.xcassets */,
@@ -310,6 +313,7 @@
 				D92F5B071D8F0F8C0070F86A /* AppDelegate.swift in Sources */,
 				D99EEBF31D968E4D001E8AC9 /* Ajustes.swift in Sources */,
 				D92F5B091D8F0F8C0070F86A /* Incio.swift in Sources */,
+				D932DCCB1DBB4E2D00037154 /* GuardarClientes.swift in Sources */,
 				D99EEBF11D968E42001E8AC9 /* Clientes.swift in Sources */,
 				D9318C0C1D9FB643005C0597 /* AddContacts.swift in Sources */,
 			);
