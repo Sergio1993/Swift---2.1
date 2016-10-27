@@ -11,12 +11,15 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
     
     var facturaArray = [Factura]()
+
+    @IBOutlet weak var tableClientes: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let bbdd = NSUserDefaults.standardUserDefaults()
+
+        //let bbdd = UserDefaults.standardUserDefaults()
         //bbdd.setObject(NSKeyedArchiver.archivedDataWithRootObject(a), forKey: "factura")
-        
+        tableClientes.dataSource = self
         savePlaces()
         
     }
@@ -55,6 +58,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         facturaArray.append(item1)
         facturaArray.append(item2)
         facturaArray.append(item3)
+        
+        print(item1.numeroFactura)
 
         let placesData = NSKeyedArchiver.archivedData(withRootObject: facturaArray)
         UserDefaults.standard.set(placesData, forKey: "factura")

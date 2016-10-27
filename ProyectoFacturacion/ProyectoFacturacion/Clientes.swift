@@ -16,24 +16,18 @@ class Clientes: UIViewController, UITableViewDataSource {
     var nombresArray:[String] = [String]()
     var apeArray:[String] = [String]()
     var clientesArray = [GuardarClientes]()
-    
     var nombre: String = ""
     var apellido: String = ""
-    
     
     @IBAction func done(_ segue:UIStoryboardSegue) {
         //nombresArray.append(nombre)
         //apeArray.append(apellido)
         saveCustomers(nom: nombre, ape: apellido)
-        print("DONE NOMBRE: "+nombre)
-        print("DONE APELLIDO: "+apellido)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad NOMBRE: "+nombre)
-        print("viewDidLoad APELLIDO: "+apellido)
-        saveCustomers(nom: nombre, ape: apellido)
+        //saveCustomers(nom: nombre, ape: apellido)
         tableClientes.dataSource = self
         
         
@@ -41,10 +35,9 @@ class Clientes: UIViewController, UITableViewDataSource {
     
     override func viewWillAppear(_ animated: Bool) {
         tableClientes.dataSource = self
-        print("viewWillAppear NOMBRE: "+nombre)
-        print("viewWillAppear APELLIDO: "+apellido)
         tableClientes.reloadData()
-        //saveCustomers()
+       
+        
     }
     
     
@@ -57,18 +50,12 @@ class Clientes: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
         let celda = tableView.dequeueReusableCell(withIdentifier: "CeldaReusable", for: indexPath)
-        
         if let data = UserDefaults.standard.object(forKey: "clientes") as? Data {
             if let clientes = NSKeyedUnarchiver.unarchiveObject(with: data) as? [GuardarClientes]
             {
-                print("tableView NOMBRE: "+nombre)
-                print("tableView APELLIDO: "+apellido)
-                celda.textLabel!.text = "\( clientes[(indexPath as NSIndexPath).row])"
-                celda.detailTextLabel!.text = "\( clientes[(indexPath as NSIndexPath).row])"
-                //celda.textLabel!.text = nombresArray[(indexPath as NSIndexPath).row]
-                //celda.detailTextLabel!.text = apeArray[(indexPath as NSIndexPath).row]
+                celda.textLabel!.text = "\( clientes[(indexPath as NSIndexPath).row].nombre)"
+                celda.detailTextLabel!.text = "\( clientes[(indexPath as NSIndexPath).row].apellido)"
             }
         }
         
@@ -76,9 +63,6 @@ class Clientes: UIViewController, UITableViewDataSource {
     }
     
     func saveCustomers(nom: String, ape: String){
-        
-        print("saveCustomers NOMBRE: "+nombre)
-        print("saveCustomers APELLIDO: "+apellido)
         
         let item1 = GuardarClientes(nombre: nom, apellido: ape)
         
@@ -89,6 +73,7 @@ class Clientes: UIViewController, UITableViewDataSource {
         UserDefaults.standard.set(placesData, forKey: "clientes")
         
     }
+
 
     
     

@@ -10,13 +10,13 @@ import Foundation
 
 class Factura : NSObject {
     
-    var numeroFactura : Int
-    var nombreFactura : String
-    var descripcion : String
-    var importe : Float
+    var numeroFactura = 0
+    var nombreFactura = ""
+    var descripcion = ""
+    var importe = 0.0
     
     
-    init(numFactura: Int, nF: String, des: String,  im: Float){
+    init(numFactura: Int, nF: String, des: String,  im: Double){
         self.numeroFactura = numFactura
         self.nombreFactura = nF
         self.descripcion = des
@@ -34,6 +34,6 @@ class Factura : NSObject {
         numeroFactura = aDecoder.decodeObject(forKey: "numeroFactura") as! Int
         nombreFactura = aDecoder.decodeObject(forKey: "nombreFactura") as! String
         descripcion = aDecoder.decodeObject(forKey: "descripcion") as! String
-        importe = aDecoder.decodeObject(forKey: "importe") as! Float
+        importe = aDecoder.decodeObject(forKey: "importe") as! Double
     }
 }

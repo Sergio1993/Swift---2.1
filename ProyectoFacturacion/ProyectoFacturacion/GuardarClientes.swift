@@ -13,7 +13,6 @@ class GuardarClientes : NSObject {
     var nombre : String
     var apellido : String
     
-    
     init(nombre: String, apellido: String){
         self.nombre = nombre
         self.apellido = apellido
@@ -25,7 +24,7 @@ class GuardarClientes : NSObject {
     }
     
     required init(coder aDecoder:NSCoder) {
-        nombre = aDecoder.decodeObject(forKey: "nombre") as! String
-        apellido = aDecoder.decodeObject(forKey: "apellido") as! String
+        self.nombre = aDecoder.decodeObject(forKey: "nombre") as! String
+        self.apellido = aDecoder.decodeObject(forKey: "apellido") as! String
     }
 }

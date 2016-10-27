@@ -13,8 +13,8 @@ class AddContacts: UIViewController {
     @IBOutlet weak var txtNombre: UITextField!
     @IBOutlet weak var txtApellidos: UITextField!
     
-    var nombre: String = ""
-    var apellido: String = ""
+    //var nombre: String = ""
+    //var apellido: String = ""
     
     @IBAction func btnGuardar(_ sender: AnyObject) {
 
