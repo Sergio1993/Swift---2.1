@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,26 +61,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="52" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oWL-1M-Xyr">
-                                <frame key="frameInset" minY="56" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="95" width="375" height="515"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="CeldaReusable" textLabel="7or-gs-BhV" detailTextLabel="lHc-Iu-AdS" rowHeight="52" style="IBUITableViewCellStyleSubtitle" id="OBE-nB-7Kw">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="52"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OBE-nB-7Kw" id="ipF-5W-OyN">
-                                            <frame key="frameInset" width="375" height="51.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7or-gs-BhV">
-                                                    <frame key="frameInset" minX="15" minY="9" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="8" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lHc-Iu-AdS">
-                                                    <frame key="frameInset" minX="15" minY="29.5" width="33" height="14.5"/>
+                                                    <rect key="frame" x="15" y="29" width="33" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -151,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="1685.5999999999999" y="-116.49175412293854"/>
         </scene>
-        <!--Title-->
+        <!--Contactos-->
         <scene sceneID="K5S-TU-ic9">
             <objects>
-                <viewController id="f2z-hB-3hf" customClass="AddContacts" customModule="ProyectoFacturacion" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="clientesID" title="Contactos" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f2z-hB-3hf" customClass="AddContacts" customModule="ProyectoFacturacion" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u1X-QH-wqc"/>
                         <viewControllerLayoutGuide type="bottom" id="wKV-f6-MeR"/>
@@ -164,12 +167,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Stp-8S-FGI">
+                                <rect key="frame" x="118" y="101" width="139" height="30"/>
                                 <state key="normal" title="Impotar un contacto"/>
                                 <connections>
                                     <segue destination="ZZM-SX-MDj" kind="show" id="Ylx-qs-dgu"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="39n-aV-ggr">
+                                <rect key="frame" x="65" y="139" width="260" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1mo-QZ-3ci"/>
                                     <constraint firstAttribute="width" constant="260" id="gug-QY-wB9"/>
@@ -179,16 +184,25 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTM-IO-f8r">
+                                <rect key="frame" x="159.5" y="534" width="56" height="30"/>
                                 <state key="normal" title="Guardar"/>
                                 <connections>
                                     <action selector="btnGuardar:" destination="f2z-hB-3hf" eventType="touchUpInside" id="S5a-37-QL5"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gwR-cR-f8j">
+                                <rect key="frame" x="65" y="187" width="260" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="X7w-Da-Hgz"/>
                                     <constraint firstAttribute="width" constant="260" id="Z2U-Fz-ioo"/>
                                 </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teléfono" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G7y-gQ-OAA">
+                                <rect key="frame" x="65" y="233" width="260" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -222,7 +236,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9K0-Oe-AcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="vkT-jg-WN1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2591" y="1452"/>
+            <point key="canvasLocation" x="2589.5999999999999" y="1451.4242878560722"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GBt-FW-Vph">

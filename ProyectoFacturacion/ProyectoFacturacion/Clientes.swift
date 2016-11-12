@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Clientes: UIViewController, UITableViewDataSource {
+class Clientes: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableClientes: UITableView!
     
@@ -28,6 +28,7 @@ class Clientes: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         //saveCustomers(nom: nombre, ape: apellido)
+        tableClientes.delegate = self
         tableClientes.dataSource = self
         
         
@@ -41,7 +42,7 @@ class Clientes: UIViewController, UITableViewDataSource {
     }
     
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    @nonobjc func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
@@ -49,7 +50,17 @@ class Clientes: UIViewController, UITableViewDataSource {
         return clientesArray.count
     }
     
+    func tableView(tableView: UITableViewDelegate, didDeselectRowAtIndexPath indexPath: IndexPath) {
+
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let destination = storyboard.instantiateViewController(withIdentifier: "clientesID") as! Clientes
+        navigationController?.pushViewController(destination, animated: true)
+        print("You deselected cell #\(indexPath.row)!")
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
         let celda = tableView.dequeueReusableCell(withIdentifier: "CeldaReusable", for: indexPath)
         if let data = UserDefaults.standard.object(forKey: "clientes") as? Data {
             if let clientes = NSKeyedUnarchiver.unarchiveObject(with: data) as? [GuardarClientes]
@@ -61,6 +72,8 @@ class Clientes: UIViewController, UITableViewDataSource {
         
         return celda
     }
+
+    
     
     func saveCustomers(nom: String, ape: String){
         
